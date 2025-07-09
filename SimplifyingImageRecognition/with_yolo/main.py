@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load YOLOv8 (pretrained on COCO)
-model = YOLO("yolov8n.pt")  # atau "yolov5s.pt" jika ingin YOLOv5
+model = YOLO("runs/detect/train/weights/best.pt")  # atau "yolov5s.pt" jika ingin YOLOv5
 
 # Open webcam
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # Gunakan CAP_DSHOW di Windows
